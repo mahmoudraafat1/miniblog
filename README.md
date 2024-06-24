@@ -91,4 +91,3 @@ php artisan serve
 
 This project provides a basic foundation for a Laravel web application with user authentication and **CRUD** functionality. It can be used as a starting point for building a more complex web application.
 
-Copyright (c) 2023, Max Base, Ali Ahmadi
