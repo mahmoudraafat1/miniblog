@@ -1,27 +1,94 @@
-## Laravel PHP Framework
+# Laravel Blog Assignment PHP Project
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This project is an assignment for PHP and Laravel web framework. a basic blog with user authentication and CRUD functionality.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Requirements
+- PHP 7.4 or higher
+- Laravel 8.x
+- MySQL or MariaDB
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Installation
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+Navigate to the project directory
 
-## Contributing
+```bash
+cd LaravelBlogAssignment
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Install dependencies with Composer
 
-## Security Vulnerabilities
+```
+composer install
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Copy the `.env.example` file to `.env`
 
-### License
+```bash
+cp .env.example .env
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Generate an application key
+
+```
+php artisan key:generate
+```
+
+Configure the database settings in the .env file:
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_assignment
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Run the migrations to create the necessary tables:
+
+```
+php artisan migrate
+```
+
+Start the built-in development server:
+
+```
+php artisan serve
+```
+
+## Features
+
+- User authentication (register, login, and logout)
+- **CRUD** functionality for blog posts
+- Pagination for blog posts
+- Search functionality for blog posts
+- Admin panel to manage users and blog posts
+
+## Screenshots
+
+**Main page:**
+
+![main](https://user-images.githubusercontent.com/107758775/231650224-dd078a9d-6422-4178-aafe-3cef55871059.png)
+
+**Log in page:**
+
+![login](https://user-images.githubusercontent.com/107758775/231650410-e87bb445-c9ac-4c78-b4ff-f10e2dc7f9a3.png)
+
+**Register:**
+
+![register](https://user-images.githubusercontent.com/107758775/231650515-65fae032-cc36-43bf-a08d-f3c5e718176e.png)
+
+**About page:**
+
+![about](https://user-images.githubusercontent.com/107758775/231650566-7fd95607-37db-4218-ab3c-779d86fcc6ef.png)
+
+**and a page for every Article:**
+
+![article](https://user-images.githubusercontent.com/107758775/231650737-39736b2c-3a8c-407c-a2d6-293c9d8e2254.png)
+
+## Conclusion
+
+This project provides a basic foundation for a Laravel web application with user authentication and **CRUD** functionality. It can be used as a starting point for building a more complex web application.
+
+Copyright (c) 2023, Max Base, Ali Ahmadi
